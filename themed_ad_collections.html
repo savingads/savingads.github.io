@@ -2,12 +2,14 @@
 	<!-- 	This web page is used to redirect to the current version of the web page for displaying the ads from our dataset of recently archived ads from 2023.
 	-->
 	<script> 
-		//<meta http-equiv="refresh" content=getContent()>
+		var currentCollectionURL =  "https://cs.odu.edu/~cs_treid003/Saving_Ads/Themed_Ad_Collections/themed_ad_collections.html";
+		
+		//<meta http-equiv="refresh" content="0,URL">
 		function createMetaElement()
 		{
 			var meta = document.createElement("meta");
 			meta.setAttribute("http-equiv", "refresh");
-			contentStr = "0,url=https://cs.odu.edu/~cs_treid003/Saving_Ads/Themed_Ad_Collections/themed_ad_collections.html" + window.location.search;
+			contentStr = "0,url=" + currentCollectionURL + window.location.search;
 			meta.setAttribute("content", contentStr);
 			document.head.appendChild(meta);
 		}
