@@ -9,8 +9,9 @@
 			meta.setAttribute("http-equiv", "refresh");
 			contentStr = "0,url=https://cs.odu.edu/~cs_treid003/Saving_Ads/Themed_Ad_Collections/themed_ad_collections.html" + window.location.search;
 			meta.setAttribute("content", contentStr);
-			document.body.appendChild(meta);
+			document.head.appendChild(meta);
 		}
+		createMetaElement();
 	</script>
 </head>
 <body>
